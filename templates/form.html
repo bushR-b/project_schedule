@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заполнения расписания</title>
+    <script src="/static/scripts.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <table  id="tableforschedule">
+                Расписание
+                <thead>
+                    <tr>
+                        {% for i in range(7) %}
+                            <td><input type="text"></td>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {% for i in range(7) %}
+                            <td><input type="text"></td>
+                        {% endfor %}
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        {% for i in range(7) %}
+                            <td><input type="text"></td>
+                        {% endfor %}
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <p><button id="add-button" onclick="addRow()">Добавить ряд</button> <button>Добавить расписание</button></p>
+        </main>
+</body>
+</html>

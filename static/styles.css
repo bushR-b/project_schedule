@@ -1,0 +1,12 @@
+.schedule {
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 100%;
+    overflow: scroll;
+    margin-bottom: 56px;
+    border: solid 1px #888;
+}
+.send-button {
+    display: flex;
+    align-self: center;
+}

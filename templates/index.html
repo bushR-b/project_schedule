@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/scripts.js"></script>
+</head>
+<body>
+<div>
+    <h5>Расписание</h5>
+</div>
+<div>
+    <table class="schedule">
+        <thead class="schedule">
+        <tr>
+            {% for day in days %}
+                <th>День: {{ day }}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody class="schedule">
+        <tr>
+            {% for subject in subjects %}
+                <th scope="row">Предмет: {{ subject }}</th>
+            {% endfor %}
+        </tr>
+        </tbody>
+        <tfoot class="schedule">
+        <tr>
+            {% for time in datas %}
+                <th>Время: {{ time }}</th>
+            {% endfor %}
+        </tr>
+        </tfoot>
+    </table>
+</div>
+<p><button onclick="changePage()" id="changer">Перейти на страницу заполнения таблицы</button></p>
+</body>
+</html>
