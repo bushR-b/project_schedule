@@ -8,13 +8,19 @@
 <body>
     <main>
         <div class="container">
-            <table  id="tableforschedule">
-                Расписание
+            <table id="tableforschedule">
+                <caption>
+                    Расписание
+                </caption>
                 <thead>
                     <tr>
-                        {% for i in range(7) %}
-                            <td><input type="text"></td>
-                        {% endfor %}
+                        <td><input type="text" name="monday" disabled>Понедельни</td>
+                        <td><input type="text" name="tuesday" disabled>Вторник</td>
+                        <td><input type="text" name="wednesday" disabled>Среда</td>
+                        <td><input type="text" name="thursday" disabled>Четверг</td>
+                        <td><input type="text" name="friday" disabled>Пятниица</td>
+                        <td><input type="text" name="saturrday" disabled>Суббота</td>   
+                        <td><input type="text" name="sunday" disabled>Воcкресенье</td>
                     </tr>
                 </thead>
                 <tbody>
